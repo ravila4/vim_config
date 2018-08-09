@@ -1,7 +1,7 @@
 " ~/.vimrc (configuration file for vim editor)
 
 " Appearance
-colorscheme arc
+colorscheme yinse
 set background=dark
 syntax on	                        " Automatic syntax highlighting
 set t_Co=256      	      	        " 256 colors in terminal
@@ -40,19 +40,19 @@ highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 "
-" Bundle plugin management
+" Plugin management
 "
 
 " Let Vundle manage Vundle -- required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-" The bundles you install will be listed here :
-Bundle 'gmarik/vundle'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'nvie/vim-flake8'
-Bundle 'itchyny/lightline.vim'
-Bundle 'ervandew/supertab'
-Bundle 'Raimondi/delimitMate'
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'nvie/vim-flake8'
+Plugin 'itchyny/lightline.vim'
+Plugin 'ervandew/supertab'
+Plugin 'Raimondi/delimitMate'
+call vundle#end()
 
 filetype plugin indent on
 
@@ -106,11 +106,9 @@ function! LightLineFugitive()
 	return ''
 endfunction
 
-" Nerd Tree key binding
-map <F2> :NERDTreeToggle<CR>
-
 " Ctags key binding
 map <f12> :! ctags -R .<CR>
 
 let delimitMate_expand_cr = 1
+
 let g:SuperTabDefaultCompletionType = 'context'
