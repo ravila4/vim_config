@@ -4,9 +4,9 @@
 Clone and move contents to $HOME.
 
 ## Included extensions:
-- DelimitMate
-- Lightline
-- Supertab
+- delimitMate
+- lightline
+- supertab
 - vim-flake8
 - vim-gitgutter
 - vundle
