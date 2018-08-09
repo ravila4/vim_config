@@ -1,4 +1,4 @@
-# My Vim configuration files
+# My Vim Configuration
 
 ## Installation
 Clone and move contents to $HOME.
