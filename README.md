@@ -1,7 +1,7 @@
 # My Vim Configuration
 
-## Installation
-Clone and move contents to $HOME.
+## Suggested installation
+Clone and make symbolic links of .vim and .vimrc to $HOME.
 
 ## Included extensions:
 - delimitMate
