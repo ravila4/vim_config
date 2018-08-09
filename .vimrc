@@ -49,66 +49,16 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'nvie/vim-flake8'
-Plugin 'itchyny/lightline.vim'
 Plugin 'ervandew/supertab'
 Plugin 'Raimondi/delimitMate'
 call vundle#end()
-
 filetype plugin indent on
-
-"
-" Lightline settings
-"
-
-" Always show status bar
-set laststatus=2
-" Lightline Theme
-set noshowmode
-let g:lightline = {
-        \ 'colorscheme': 'arcline',
-        \ 'active': {
-            \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
-            \ },
-        \ 'component_function': {
-            \   'fugitive': 'LightLineFugitive',
-            \   'readonly': 'LightLineReadonly',
-            \   'modified': 'LightLineModified'
-            \ },
-        \ }
-
-function! LightLineModified()
-  if &filetype == "help"
-    return ""
-  elseif &modified
-    return "+"
-  elseif &modifiable
-    return ""
-  else
-    return ""
-  endif
- endfunction
-
-function! LightLineReadonly()
-  if &filetype == "help"
-    return ""
-  elseif &readonly
-    return ""
-  else
-    return ""
-  endif
- endfunction
-
-function! LightLineFugitive()
-	if exists("*fugitive#head")
-		let _ = fugitive#head()
-		return strlen(_) ? ' '._ : ''
-    endif
-	return ''
-endfunction
 
 " Ctags key binding
 map <f12> :! ctags -R .<CR>
 
+" delimitMate settings
 let delimitMate_expand_cr = 1
 
+" SuperTab completion settings
 let g:SuperTabDefaultCompletionType = 'context'
