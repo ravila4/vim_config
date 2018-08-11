@@ -3,7 +3,7 @@
 "
 
 hi clear
-let g:colors_name="yinse"
+let g:colors_name="darksea"
 
 "
 " Support for 256-color terminal

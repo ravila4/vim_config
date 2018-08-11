@@ -1,7 +1,7 @@
 " ~/.vimrc (configuration file for vim editor)
 
 " Appearance
-colorscheme yinse
+colorscheme darksea
 set background=dark
 syntax on	                        " Automatic syntax highlighting
 set t_Co=256      	      	        " 256 colors in terminal
