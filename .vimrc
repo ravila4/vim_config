@@ -50,7 +50,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'nvie/vim-flake8'
 Plugin 'ervandew/supertab'
 Plugin 'Raimondi/delimitMate'
-Plugin 'davidhalter/jedi-vim'
+Plugin 'goerz/jupytext.vim'
 call vundle#end()
 filetype plugin indent on
 
