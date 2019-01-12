@@ -10,4 +10,5 @@ A lightweight and minimal Vim setup with sane settings, for getting things up an
 - supertab - To use <Tab> for completions
 - vim-flake8 - Python PEP8 checker. Press <F7> to check code. Requires python package 'flake8'.
 - vim-gitgutter - Track Git insertions, changes and deletions.
+- jupytext.vim - Edit Jupyter notebooks as plain text files.
 - Vundle.vim - Manage extensions. 
