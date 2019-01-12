@@ -1,5 +1,5 @@
 # My Vim Configuration
-A lightweight and minimal Vim setup with sane settings, for getting things up and running quickly in remote computers.
+Lightweight and minimal Vim config with sane settings, for getting things up-and-running quickly.
 
 ## Installation
 1. Clone repository and make symbolic links of `.vim/` and `.vimrc` to $HOME.
