@@ -57,6 +57,10 @@ filetype plugin indent on
 " Ctags key binding
 map <f12> :! ctags -R .<CR>
 
+" Spell check
+map <F3> :set spell spelllang=en_us<CR>
+map <F4> :set nospell<CR>
+
 " delimitMate settings
 let delimitMate_expand_cr = 1
 
