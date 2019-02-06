@@ -10,7 +10,7 @@ set softtabstop=0
 set expandtab
 set shiftwidth=4
 set smarttab
-set number				" Show line numbers
+set relativenumber				" Show line numbers
 set cursorline     			" Highlight current line
 
 " Behaviour
