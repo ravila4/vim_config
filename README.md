@@ -2,7 +2,7 @@
 Lightweight and minimal Vim config with sane settings, for getting things up-and-running quickly.
 
 ## Installation
-1. Clone repository and make symbolic links of `.vim/` and `.vimrc` to $HOME.
+1. Clone repository and make symbolic links of `vim/` and `vimrc` to $HOME/.vim/ and $HOME/.vimrc.
 2. Run ':PluginInstall' in Vim to download and install the extensions.
 
 ## Extensions:
