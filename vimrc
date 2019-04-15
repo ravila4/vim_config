@@ -52,6 +52,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'Raimondi/delimitMate'
 Plugin 'goerz/jupytext.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'ravila4/vim-neatstatus'
 call vundle#end()
 filetype plugin indent on
 
@@ -64,5 +65,5 @@ map <F3> :r!date "+\%F" -d "-2 day" <CR>
 " delimitMate settings
 let delimitMate_expand_cr = 1
 
-" SuperTab completion settings
-let g:SuperTabDefaultCompletionType = 'context'
+" NeatStatusLine settings
+let g:NeatStatusLine_color_insert = 'guifg=#ffffff guibg=#ff0000 gui=bold ctermfg=15 ctermbg=9 cterm=bold'
