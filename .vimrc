@@ -49,9 +49,9 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 Plugin 'airblade/vim-gitgutter'
 Plugin 'nvie/vim-flake8'
-Plugin 'ervandew/supertab'
 Plugin 'Raimondi/delimitMate'
 Plugin 'goerz/jupytext.vim'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
