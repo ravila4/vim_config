@@ -40,6 +40,16 @@ filetype off
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
+" Copy yanked text in Windows
+if system('uname -r') =~ "Microsoft"
+  nnoremap = :r !powershell.exe -Command "& {Get-Clipboard}"<enter>
+  augroup Yank
+    autocmd!
+    autocmd TextYankPost * :call system('clip.exe ',@")
+  augroup END
+endif
+
+
 "
 " Plugin management
 "
