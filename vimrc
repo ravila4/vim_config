@@ -26,16 +26,6 @@ set guioptions-=r			" Turn off GUI right scrollbar
 set guioptions-=L			" Turn off GUI left scrollbar
 set foldmethod=marker                   " Fold code using {{{}}}
 
-" Highlight characters past column 80 for Python files
-hi ColorColumn ctermbg=0 guibg=#383C4A  
-augroup vimrc_autocmds
-		autocmd!
-		autocmd FileType python let &colorcolumn=join(range(81,999),",") 
-		augroup END
-
-set nocompatible
-filetype off
-
 " Highlight unnecessary spaces
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
@@ -61,8 +51,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'nvie/vim-flake8'
 Plugin 'Raimondi/delimitMate'
 Plugin 'goerz/jupytext.vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'ravila4/vim-neatstatus'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
