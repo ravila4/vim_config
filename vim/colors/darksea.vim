@@ -17,12 +17,12 @@ if &t_Co > 255
    hi Conditional     ctermfg=10               cterm=bold
    hi Constant        ctermfg=135              cterm=bold
    hi Cursor          ctermfg=16  ctermbg=253
-   hi Debug           ctermfg=225              cterm=bold
-   hi Define          ctermfg=81
+   hi Debug           ctermfg=224              cterm=bold
+   hi Define          ctermfg=39
    hi Delimiter       ctermfg=247
 
    hi DiffAdd                     ctermbg=24
-   hi DiffChange      ctermfg=181 ctermbg=239
+   hi DiffChange      ctermfg=181 ctermbg=240
    hi DiffDelete      ctermfg=168 ctermbg=53
    hi DiffText                    ctermbg=102  cterm=bold
 
@@ -39,24 +39,24 @@ if &t_Co > 255
    hi IncSearch       ctermfg=193 ctermbg=16
 
    hi Keyword         ctermfg=2                cterm=bold
-   hi Label           ctermfg=229              cterm=none
+   hi Label           ctermfg=220              cterm=none
    hi Macro           ctermfg=193
-   hi SpecialKey      ctermfg=81
+   hi SpecialKey      ctermfg=39
 
    hi MatchParen      ctermfg=208  ctermbg=0   cterm=bold
-   hi ModeMsg         ctermfg=229
-   hi MoreMsg         ctermfg=229
+   hi ModeMsg         ctermfg=220
+   hi MoreMsg         ctermfg=220
    hi Operator        ctermfg=10
 
    " complete menu
    hi Pmenu           ctermfg=7   ctermbg=0
    hi PmenuSel        ctermfg=15  ctermbg=33
    hi PmenuSbar                   ctermbg=241
-   hi PmenuThumb      ctermfg=81
+   hi PmenuThumb      ctermfg=39
 
    hi PreCondit       ctermfg=118              cterm=bold
    hi PreProc         ctermfg=10
-   hi Question        ctermfg=81
+   hi Question        ctermfg=39
    hi Repeat          ctermfg=10               cterm=bold
    hi Search          ctermfg=253 ctermbg=66
 
@@ -64,20 +64,20 @@ if &t_Co > 255
    hi SignColumn      ctermfg=118 ctermbg=235
    hi SpecialChar     ctermfg=10               cterm=bold
    hi SpecialComment  ctermfg=245              cterm=bold
-   hi Special         ctermfg=81
+   hi Special         ctermfg=39
    hi SpecialKey      ctermfg=245
 
    hi Statement       ctermfg=10               cterm=bold
    hi StatusLine      ctermfg=238 ctermbg=0
    hi StatusLineNC    ctermfg=244 ctermbg=0
    hi StorageClass    ctermfg=208
-   hi Structure       ctermfg=81
+   hi Structure       ctermfg=39
    hi Tag             ctermfg=161
    hi Title           ctermfg=166
    hi Todo            ctermfg=231 ctermbg=0    cterm=bold
 
-   hi Typedef         ctermfg=81
-   hi Type            ctermfg=81               cterm=none
+   hi Typedef         ctermfg=39
+   hi Type            ctermfg=39               cterm=none
    hi Underlined      ctermfg=244              cterm=underline
 
    hi VertSplit       ctermfg=238 ctermbg=244  cterm=bold
