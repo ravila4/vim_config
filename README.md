@@ -6,6 +6,7 @@ Applications included:
 
 - BASH
 - Vim
+- git
 - ncmpcpp
 - pymol
 
