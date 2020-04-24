@@ -1,14 +1,16 @@
-# My Vim Configuration
-Lightweight and minimal Vim config with sane settings, for getting things up-and-running quickly.
+# Dotfiles
+
+This repository contains configuration files ("dotfiles") to my most essential applications. It is intended as an easy way to deploy my configuration across multiple workstations and servers.
+
+Applications included:
+
+- BASH
+- Vim
+- mpd
+- systemd
 
 ## Installation
-1. Clone repository and make symbolic links of `vim/` and `vimrc` to $HOME/.vim/ and $HOME/.vimrc.
-2. Run ':PluginInstall' in Vim to download and install the extensions.
 
-## Extensions:
-- delimitMate - Automatic closing of quotes, brackets, parentheses.
-- supertab - To use <Tab> for completions
-- vim-flake8 - Python PEP8 checker. Press <F7> to check code. Requires python package 'flake8'.
-- vim-gitgutter - Track Git insertions, changes and deletions.
-- jupytext.vim - Edit Jupyter notebooks as plain text files.
-- Vundle.vim - Manage extensions. 
+Run **./install.sh** to make symbolic links to your home directory.
+For Vim, you may have to do a `:PlugInstall` to install the included plugins.
+
