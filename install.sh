@@ -15,3 +15,6 @@ ln -sf `pwd`/pymol/.pymol ~
 
 # git
 ln -sf `pwd`/git/.gitconfig ~
+
+# systemd
+ln -sf `pwd`/systemd ~/.config

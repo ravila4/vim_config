@@ -1,0 +1,10 @@
+[Unit]
+Description=Change the GTK theme to dark mode.
+After=graphical.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark && gsettings set org.gnome.gedit.preferences.editor scheme builder-dark'
+
+[Install]
+WantedBy=default.target
