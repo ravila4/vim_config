@@ -1,13 +1,13 @@
 # Dotfiles
 
-This repository contains configuration files ("dotfiles") to my most essential applications. It is intended as an easy way to deploy my configuration across multiple workstations and servers.
+This repository contains configuration files ("dotfiles") to several applications. It is intended as an easy way to deploy my configuration across multiple workstations and servers.
 
 Applications included:
 
 - BASH
 - Vim
-- mpd
-- systemd
+- ncmpcpp
+- pymol
 
 ## Installation
 
