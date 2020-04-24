@@ -30,6 +30,9 @@ set foldmethod=marker                   " Fold code using {{{}}}
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
+" Insert date
+map <F3> :r!date "+\%F" -d "-2 day" <CR>
+
 " Copy yanked text in Windows
 if system('uname -r') =~ "Microsoft"
   nnoremap = :r !powershell.exe -Command "& {Get-Clipboard}"<enter>
@@ -39,13 +42,7 @@ if system('uname -r') =~ "Microsoft"
   augroup END
 endif
 
-
-"
 " Plugin management
-"
-
-" Let Vundle manage Vundle -- required!
-set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 Plugin 'airblade/vim-gitgutter'
 Plugin 'nvie/vim-flake8'
@@ -55,12 +52,6 @@ Plugin 'ravila4/vim-neatstatus'
 Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
-
-" Ctags key binding
-map <f12> :! ctags -R .<CR>
-
-" Insert date
-map <F3> :r!date "+\%F" -d "-2 day" <CR>
 
 " delimitMate settings
 let delimitMate_expand_cr = 1
