@@ -12,3 +12,6 @@ ln -sf `pwd`/ncmpcpp/.ncmpcpp ~
 
 # pymol
 ln -sf `pwd`/pymol/.pymol ~
+
+# git
+ln -sf `pwd`/git/.gitconfig ~
