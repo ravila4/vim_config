@@ -48,8 +48,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'nvie/vim-flake8'
 Plug 'Raimondi/delimitMate'
 Plug 'goerz/jupytext.vim'
-Plug 'ravila4/vim-neatstatus'
-Plug 'Valloric/YouCompleteMe'
+Plug 'ervandew/supertab'
+Plug 'davidhalter/jedi-vim'
 call plug#end()
 
 " delimitMate settings

@@ -16,3 +16,9 @@
 [submodule "vim_config/.vim/bundle/vim-plug"]
 	path = vim_config/.vim/plugged/vim-plug
 	url = https://github.com/junegunn/vim-plug.git
+[submodule "vim_config/.vim/plugged/supertab"]
+	path = vim_config/.vim/plugged/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim_config/.vim/plugged/jedi-vim"]
+	path = vim_config/.vim/plugged/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
