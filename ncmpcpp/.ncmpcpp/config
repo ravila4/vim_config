@@ -1,0 +1,68 @@
+###################################################
+## ~/.ncmpcpp/config                             ##
+###################################################
+
+mpd_music_dir = "/home/ravila/Music/Music_library"
+mpd_connection_timeout = "5"
+mpd_crossfade_time = "5"
+
+# Playlist
+song_columns_list_format = "(6f)[blue]{l} (25)[blue]{a} (40)[blue]{t|f} (30)[blue]{b}"
+#now_playing_prefix = "$b$5»$7»$1» "
+now_playing_suffix = "$/b"
+playlist_display_mode = "classic" (classic/columns)
+autocenter_mode = "yes"
+centered_cursor = "yes"
+
+# Bars
+song_status_format = "$6%a $4• $6%t $4• $6%b {(Disc %d) }$4• $6%y$4"
+progressbar_look = "━━─"
+titles_visibility = "no"
+
+# Browser
+browser_playlist_prefix = "$2plist »$9 "
+browser_display_mode = "columns" (classic/columns)
+
+# Colors
+discard_colors_if_item_is_selected = "yes"
+#header_window_color = "white"
+volume_color = "yellow"
+#state_line_color = "white"
+state_flags_color = "yellow"
+main_window_color = "blue"
+color1 = "cyan"
+color2 = "yellow"
+main_window_highlight_color = "blue"
+#progressbar_color = "white"
+statusbar_color = "cyan"
+active_column_color = "red"
+visualizer_color = "blue"
+
+# Others
+search_engine_display_mode = "columns" (classic/columns)
+follow_now_playing_lyrics = "yes"
+visualizer_type = "spectrum" (spectrum/wave)
+visualizer_look = "●▋"
+#song_window_title_format = "MPD: {%a > }{%t}{ [%b{ Disc %d}]}|{%f}"
+
+##### colors definitions #####
+colors_enabled = "yes"
+
+# Colors
+#discard_colors_if_item_is_selected = "yes"
+#header_window_color = "black"
+#volume_color = "cyan"
+#state_line_color = "black"
+#state_flags_color = "yellow"
+#main_window_color = "white"
+#color1 = "default"
+#color2 = "gren"
+#main_window_highlight_color = "red"
+#progressbar_color = "yellow"
+#statusbar_color = "black"
+#active_column_color = "red"
+
+startup_screen = playlist
+startup_slave_screen = visualizer
+locked_screen_width_part = 60
+

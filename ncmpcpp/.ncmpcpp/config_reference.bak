@@ -1,0 +1,77 @@
+###################################################
+## ~/.ncmpcpp/config
+###################################################
+
+mpd_music_dir = "/home/abdo/Music"
+mpd_crossfade_time = "5"
+
+########################
+## Visualizer ##
+########################
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "1"
+visualizer_type = "wave" (spectrum/wave)
+#visualizer_type = "spectrum" (spectrum/wave)
+visualizer_look = "⁕▋"
+visualizer_in_stereo = "yes"
+#visualizer_color = "blue"
+########################
+## Song format ##
+########################
+song_list_format = "{$3%a - }{$4%b - }{$8%t$9}$R{$3(%l)$9}"
+song_status_format = "$2%a $1• $3%t $1• $4%b {(Disc %d) }"
+alternative_header_first_line_format = "$b$1$aqqu$/a$9 {$5%t$9}|{%f} $1$atqq$/a$9$/b"
+song_columns_list_format = "(6f)[blue]{l} (25)[red]{a} (40)[green]{t|f} (30)[yellow]{b}"
+playlist_display_mode = "columns" (classic/columns)
+now_playing_suffix = "$/b"
+playlist_display_mode = "columns" (classic/columns)
+autocenter_mode = "yes"
+centered_cursor = "yes"
+########################
+##  browser       ##
+########################
+browser_playlist_prefix = "$2plist »$9 "
+browser_display_mode = "columns" (classic/columns)
+########################
+##  colors      ##
+########################
+
+
+colors_enabled = "yes"
+header_window_color = "green"
+volume_color = "green"
+state_line_color = "blue"
+state_flags_color = "green"
+main_window_color = "green"
+color1 = "red"
+color2 = "green"
+main_window_highlight_color = "green"
+progressbar_color = "blue"
+statusbar_color = "green"
+alternative_ui_separator_color = "green"
+active_column_color = "green"
+
+########################
+##  other      ##
+########################
+user_interface = "alternative" (classic/alternative)
+media_library_left_column = "a"
+header_visibility = "no"
+statusbar_visibility = "no"
+cyclic_scrolling = "yes"
+display_screens_numbers_on_start = "no"
+ignore_leading_the = "yes"
+
+########################
+##  bars     ##
+########################
+progressbar_look = "=|"
+titles_visibility = "no"
+
+########################
+##  Clock     ##
+########################
+clock_display_seconds = "yes"
+
+
