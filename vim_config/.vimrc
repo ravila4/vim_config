@@ -43,15 +43,14 @@ if system('uname -r') =~ "Microsoft"
 endif
 
 " Plugin management
-call vundle#begin()
-Plugin 'airblade/vim-gitgutter'
-Plugin 'nvie/vim-flake8'
-Plugin 'Raimondi/delimitMate'
-Plugin 'goerz/jupytext.vim'
-Plugin 'ravila4/vim-neatstatus'
-Plugin 'Valloric/YouCompleteMe'
-call vundle#end()
-filetype plugin indent on
+call plug#begin('~/.vim/plugged')
+Plug 'airblade/vim-gitgutter'
+Plug 'nvie/vim-flake8'
+Plug 'Raimondi/delimitMate'
+Plug 'goerz/jupytext.vim'
+Plug 'ravila4/vim-neatstatus'
+Plug 'Valloric/YouCompleteMe'
+call plug#end()
 
 " delimitMate settings
 let delimitMate_expand_cr = 1
