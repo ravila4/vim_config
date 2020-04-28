@@ -17,8 +17,8 @@ alias hn="w3m news.ycombinator.com"
 alias notes="code --folder-uri ~/Documents/Notes"
 alias ravilabio="cd ~/Projects/ravilabio"
 alias ravilart="cd ~/Projects/ravilart"
-alias dark="systemctl --user start dark-theme.service"
-alias light="systemctl --user start light-theme.service"
+alias dark="systemctl --user start dark-gtk-theme.service"
+alias light="systemctl --user start light-gtk-theme.service"
 
 # tilix
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
