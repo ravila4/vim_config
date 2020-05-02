@@ -1,3 +1,4 @@
+![](dotfiles.png)
 # Dotfiles
 
 This repository contains configuration files ("dotfiles") to several applications. It is intended as an easy way to deploy my configuration across multiple workstations and servers.
@@ -5,10 +6,11 @@ This repository contains configuration files ("dotfiles") to several application
 Applications included:
 
 - BASH
-- Vim
+- vim
 - git
 - ncmpcpp
 - pymol
+- systemd
 
 ## Installation
 
