@@ -50,6 +50,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'goerz/jupytext.vim'
 Plug 'ervandew/supertab'
 Plug 'davidhalter/jedi-vim'
+Plug 'mzlogin/vim-markdown-toc'
 call plug#end()
 
 " delimitMate settings
