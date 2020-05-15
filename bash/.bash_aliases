@@ -5,30 +5,38 @@
 # ----
 export PATH=$PATH:"~/.local/bin"
 
-# Command defaults
-# ----------------
+# Command preferences
+# -------------------
+# Set cli edit mode to vi
 #set -o vi
 export EDITOR="vim"
 alias ls="ls --color -h --group-directories-first"
+# rlwraps
 alias sftp="rlwrap sftp"
 alias vmd="rlwrap vmd"
+# w3m bookmarks
 alias ddg="w3m duckduckg.com"
 alias hn="w3m news.ycombinator.com"
-alias code="flatpak run com.visualstudio.code"
-alias notes="code --folder-uri ~/Documents/Notes"
+# common folders
+alias edit-notes="code --folder-uri ~/Documents/Notes"
+alias notes="cd ~/Documents/Notes"
 alias ravilabio="cd ~/Projects/ravilabio"
 alias ravilart="cd ~/Projects/ravilart"
+# services
 alias dark="systemctl --user start dark-gtk-theme.service"
 alias light="systemctl --user start light-gtk-theme.service"
-
+# flatpak apps
+alias code="flatpak run com.visualstudio.code"
+alias calibre="flatpak run com.calibre_ebook.calibre"
+alias blender="flatpak run org.blender.Blender"
+alias inkscape="flatpak run org.inkscape.Inkscape"
+alias 
+# docker containers
+alias powershell="docker run --rm -v /home/ravila/:/home/ravila/:Z -it mcr.microsoft.com/powershell"
 # tilix
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
-
-# Docker Containers
-# -----------------
-alias powershell="docker run --rm -v /home/ravila/:/home/ravila/:Z -it mcr.microsoft.com/powershell"
 
 # Functions
 # ---------
