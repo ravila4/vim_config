@@ -30,7 +30,6 @@ alias code="flatpak run com.visualstudio.code"
 alias calibre="flatpak run com.calibre_ebook.calibre"
 alias blender="flatpak run org.blender.Blender"
 alias inkscape="flatpak run org.inkscape.Inkscape"
-alias 
 # docker containers
 alias powershell="docker run --rm -v /home/ravila/:/home/ravila/:Z -it mcr.microsoft.com/powershell"
 # tilix
