@@ -3,9 +3,11 @@
 # bash
 ln -sf `pwd`/bash/.bash_aliases ~
 
-# vim
-ln -sf `pwd`/vim_config/.vim ~
-ln -sf `pwd`/vim_config/.vimrc ~
+# git
+ln -sf `pwd`/git/.gitconfig ~
+
+# mpd
+ln -sf `pwd`/mpd ~/.config
 
 # ncmpcpp
 ln -sf `pwd`/ncmpcpp/.ncmpcpp ~
@@ -13,8 +15,15 @@ ln -sf `pwd`/ncmpcpp/.ncmpcpp ~
 # pymol
 ln -sf `pwd`/pymol/.pymol ~
 
-# git
-ln -sf `pwd`/git/.gitconfig ~
-
 # systemd
 ln -sf `pwd`/systemd ~/.config
+
+# Templates
+ln -sf `pwd`/Templates ~
+
+# top
+ln -sf `pwd`/top/.toprc ~
+
+# vim
+ln -sf `pwd`/vim_config/.vim ~
+ln -sf `pwd`/vim_config/.vimrc ~
