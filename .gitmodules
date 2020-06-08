@@ -22,3 +22,6 @@
 [submodule "vim_config/.vim/plugged/jedi-vim"]
 	path = vim_config/.vim/plugged/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "vim_config/.vim/plugged/vim-markdown-toc"]
+	path = vim_config/.vim/plugged/vim-markdown-toc
+	url = https://github.com/vim-markdown-toc.git
