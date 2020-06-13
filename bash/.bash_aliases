@@ -11,6 +11,8 @@ export PATH=$PATH:"~/.local/bin"
 #set -o vi
 export EDITOR="vim"
 alias ls="ls --color -h --group-directories-first"
+alias rm="trash"
+alias protonvpn="sudo protonvpn"
 # rlwraps
 alias sftp="rlwrap sftp"
 alias vmd="rlwrap vmd"
