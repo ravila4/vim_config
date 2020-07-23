@@ -55,6 +55,3 @@ call plug#end()
 
 " delimitMate settings
 let delimitMate_expand_cr = 1
-
-" NeatStatusLine settings
-let g:NeatStatusLine_color_insert = 'guifg=#ffffff guibg=#ff0000 gui=bold ctermfg=15 ctermbg=9 cterm=bold'
