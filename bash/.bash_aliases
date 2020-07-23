@@ -17,7 +17,7 @@ alias protonvpn="sudo protonvpn"
 alias sftp="rlwrap sftp"
 alias vmd="rlwrap vmd"
 # w3m bookmarks
-alias ddg="w3m duckduckg.com"
+alias ddg="w3m duckduckgo.com"
 alias hn="w3m news.ycombinator.com"
 # common folders
 alias edit-notes="code --folder-uri ~/Documents/Notes"
