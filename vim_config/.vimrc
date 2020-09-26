@@ -51,6 +51,7 @@ Plug 'goerz/jupytext.vim'
 Plug 'ervandew/supertab'
 Plug 'davidhalter/jedi-vim'
 Plug 'mzlogin/vim-markdown-toc'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
 
 " delimitMate settings
