@@ -5,14 +5,18 @@ colorscheme default
 set background=dark
 syntax on	                        " Automatic syntax highlighting
 set t_Co=256      	      	        " 256 colors in terminal
-set tabstop=8                           " Tab settings
+
+" Line Numbers
+set number				" Show line numbers
+set relativenumber
+set cursorline     			" Highlight current line
+
+" Tabbing 
+set tabstop=8
 set softtabstop=0
 set expandtab
 set shiftwidth=4
 set smarttab
-set number				" Show line numbers
-set relativenumber
-set cursorline     			" Highlight current line
 
 " Behaviour
 set incsearch ignorecase smartcase	" Search
@@ -51,7 +55,17 @@ Plug 'goerz/jupytext.vim'
 Plug 'ervandew/supertab'
 Plug 'davidhalter/jedi-vim'
 Plug 'mzlogin/vim-markdown-toc'
+Plug 'chrisbra/csv.vim'
+Plug 'iamcco/markdown-preview.vim'
+Plug 'jpalardy/vim-slime'
+Plug 'JuliaEditorSupport/julia-vim'
 call plug#end()
 
 " delimitMate settings
 let delimitMate_expand_cr = 1
+
+" vim-slime settings
+let g:slime_target = "tmux"
+let g:slime_paste_file = "$HOME/.slime_paste"
+let g:slime_python_ipython = 1
+let g:slime_default_config = {"socket_name": get(split($TMUX, ","), 0), "target_pane": ":.1"}
