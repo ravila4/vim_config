@@ -27,3 +27,6 @@ ln -sf `pwd`/top/.toprc ~
 # vim
 ln -sf `pwd`/vim_config/.vim ~
 ln -sf `pwd`/vim_config/.vimrc ~
+
+# fonts
+ln -sf `pwd`/fonts/.fonts ~
