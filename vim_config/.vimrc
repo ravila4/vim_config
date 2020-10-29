@@ -7,13 +7,13 @@ syntax on	                        " Automatic syntax highlighting
 set t_Co=256      	      	        " 256 colors in terminal
 
 " Line Numbers
-:set number relativenumber
+set number relativenumber
 
-:augroup numbertoggle
-:  autocmd!
-:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-:augroup END
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 set cursorline     			" Highlight current line
 
 " Tabbing 
@@ -40,7 +40,7 @@ highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " Insert date
-map <F3> :r!date "+\%F" -d "-2 day" <CR>
+map <F3> :r!date "+\%F" <CR>
 
 " Copy yanked text in Windows
 if system('uname -r') =~ "Microsoft"
@@ -64,10 +64,16 @@ Plug 'chrisbra/csv.vim'
 Plug 'iamcco/markdown-preview.vim'
 Plug 'jpalardy/vim-slime'
 Plug 'JuliaEditorSupport/julia-vim'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 " delimitMate settings
 let delimitMate_expand_cr = 1
+
+" NERDTree settings
+map <F2> :NERDTreeToggle<CR>
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 
 " vim-slime settings
 let g:slime_target = "tmux"
