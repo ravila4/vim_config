@@ -25,6 +25,7 @@ set smarttab
 
 " Behaviour
 set incsearch ignorecase smartcase	" Search
+set encoding=utf8                       " Encoding
 set scrolloff=4				" Keep some context around cursor
 set wildmenu wildmode=list		" Completion
 set mouse=a				" Enable mouse for all modes
@@ -65,6 +66,8 @@ Plug 'iamcco/markdown-preview.vim'
 Plug 'jpalardy/vim-slime'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 call plug#end()
 
 " delimitMate settings
