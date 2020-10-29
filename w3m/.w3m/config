@@ -1,0 +1,3 @@
+extbrowser3 
+extbrowser2 /usr/bin/firefox
+extbrowser /usr/local/bin/rdrview

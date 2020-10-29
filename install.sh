@@ -30,3 +30,9 @@ ln -sf `pwd`/vim_config/.vimrc ~
 
 # fonts
 ln -sf `pwd`/fonts/.fonts ~
+
+# w3m
+ln -sf `pwd`/w3m/.w3m ~
+
+# .local/bin
+ln -sf `pwd`/local/bin ~/.local
