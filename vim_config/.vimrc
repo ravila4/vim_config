@@ -7,8 +7,13 @@ syntax on	                        " Automatic syntax highlighting
 set t_Co=256      	      	        " 256 colors in terminal
 
 " Line Numbers
-set number				" Show line numbers
-set relativenumber
+:set number relativenumber
+
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
 set cursorline     			" Highlight current line
 
 " Tabbing 
