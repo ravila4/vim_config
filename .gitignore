@@ -1,2 +1,4 @@
 vim_config/.vim/plugged/*
 vim_config/.vim/.netrwhist
+w3m/.w3m/history
+w3m/.w3m/cookie
