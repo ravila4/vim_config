@@ -34,7 +34,10 @@ set mousemodel=popup			" Right-click pops up menu
 set guioptions-=T			" Turn off GUI toolbar
 set guioptions-=r			" Turn off GUI right scrollbar
 set guioptions-=L			" Turn off GUI left scrollbar
-set foldmethod=marker                   " Fold code using {{{}}}
+
+" Fold method
+set foldmethod=indent                   " Fold code using tabs
+set foldlevel=99                        " Keep code unfolded by default
 
 " Highlight unnecessary spaces
 highlight BadWhitespace ctermbg=red guibg=darkred
