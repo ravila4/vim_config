@@ -8,7 +8,6 @@ set t_Co=256      	      	        " 256 colors in terminal
 
 " Line Numbers
 set number relativenumber
-
 augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
@@ -23,19 +22,26 @@ set expandtab
 set shiftwidth=4
 set smarttab
 
-" Behaviour
-set incsearch ignorecase smartcase	" Search
+" Search
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+" Misc
 set encoding=utf8                       " Encoding
 set scrolloff=4				" Keep some context around cursor
 set wildmenu wildmode=list		" Completion
 set mouse=a				" Enable mouse for all modes
+
+" GUI
 set nomousehide			        " Don't hide mouse while typing
 set mousemodel=popup			" Right-click pops up menu
 set guioptions-=T			" Turn off GUI toolbar
 set guioptions-=r			" Turn off GUI right scrollbar
 set guioptions-=L			" Turn off GUI left scrollbar
 
-" Fold method
+" Code Folding
 set foldmethod=indent                   " Fold code using tabs
 set foldlevel=99                        " Keep code unfolded by default
 
