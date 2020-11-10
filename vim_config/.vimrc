@@ -45,6 +45,9 @@ set guioptions-=L			" Turn off GUI left scrollbar
 set foldmethod=indent                   " Fold code using tabs
 set foldlevel=99                        " Keep code unfolded by default
 
+" Source Abbreviations
+so ~/.vim/abbrev.vim
+
 " Highlight unnecessary spaces
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
