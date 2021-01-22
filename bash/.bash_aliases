@@ -11,8 +11,9 @@ export PATH=$PATH:"~/.local/bin"
 #set -o vi
 export EDITOR="vim"
 alias ls="ls --color -h --group-directories-first"
-alias rm="trash"
+alias rm="trash-put"
 alias protonvpn="sudo protonvpn"
+alias icat="kitty +kitten icat"
 # rlwraps
 alias sftp="rlwrap sftp"
 alias vmd="rlwrap vmd"
@@ -28,16 +29,17 @@ alias ravilart="cd ~/Projects/ravilart"
 alias dark="systemctl --user start dark-gtk-theme.service"
 alias light="systemctl --user start light-gtk-theme.service"
 # flatpak apps
-alias code="flatpak run com.visualstudio.code"
+#alias code="flatpak run com.visualstudio.code"
 alias calibre="flatpak run com.calibre_ebook.calibre"
+alias meld="flatpak run org.gnome.meld"
 alias blender="flatpak run org.blender.Blender"
 alias inkscape="flatpak run org.inkscape.Inkscape"
 # docker containers
 alias powershell="docker run --rm -v /home/ravila/:/home/ravila/:Z -it mcr.microsoft.com/powershell"
 # tilix
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
+#if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+#        source /etc/profile.d/vte.sh
+#fi
 
 # Functions
 # ---------
@@ -49,6 +51,14 @@ function csview()
 function tsview()
 {
     column -s\t -t < $1 | less -#2 -N -S
+}
+
+# Usage: tunnel remote:port
+function tunnel()
+{
+    IFS=":"
+    read -a args <<< $1
+    ssh -t -L ${args[1]}:localhost:${args[1]} ${args[0]}
 }
 
 # API Keys
