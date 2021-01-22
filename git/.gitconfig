@@ -1,3 +1,5 @@
 [user]
 	name = Ricardo Avila
 	email = ravila@protonmail.com
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
